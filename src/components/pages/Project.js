@@ -1,11 +1,12 @@
 import React from "react";
 import movie from '../../images/movie.jpg'
 import dog from "../../images/dog.png";
+import "../../styles/Project.css";
 
 export default function Project() {
   return (
     <div>
-      <div>
+      <div className="project-item">
         <a
           href="https://gulama2008.github.io/Movie-Search-Engine/"
           target="_blank"

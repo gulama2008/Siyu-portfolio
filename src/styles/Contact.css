@@ -1,0 +1,15 @@
+.contact-container{
+    margin-left:100px;
+    margin-top: 50px;
+    width: 500px;
+    color:rgb(25, 77, 92);
+}
+
+.form-label{
+    font-size: 20px;
+}
+
+.form-btn{
+    background-color: rgb(25, 77, 92)!important;
+    border-color: rgb(25, 77, 92)!important;
+}

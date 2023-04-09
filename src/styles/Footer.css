@@ -1,0 +1,19 @@
+.footer-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#logo-github{
+    margin-right: 50px;
+}
+
+#logo-stackoverflow{
+    margin-left: 50px;
+}
+
+.footer-logo-img{
+    height: 50px;
+    width: 50px;
+}
+

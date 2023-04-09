@@ -7,9 +7,15 @@
 }
 
 .profileName{
-    margin: 50px;
-    color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-shadow: black 0.1em 0.1em 0.2em    
+    background-color: rgb(123, 209, 217);
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    /* margin: 50px; */
+    text-align: right;
+    font-weight: bold;
+    color: black;
+    /* text-shadow: black 0.1em 0.1em 0.2em     */
 }
 
