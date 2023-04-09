@@ -1,0 +1,15 @@
+.headerContainer{
+    height: 150px;
+    background-image: url(../images/stripes.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profileName{
+    margin: 50px;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: black 0.1em 0.1em 0.2em    
+}
+
