@@ -2,20 +2,39 @@ import React from 'react';
 
 export default function Resume() {
   return (
-    <div>
+    <div className='resume-container'>
       <h1>Resume</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p>
+      <div>
+        Download my
+        <a
+          href="https://drive.google.com/file/d/1cTeGbKT-JMZPcPLV7SBE6zdN3bDHtrl8/view?usp=sharing"
+          download="Siyu Liu Resume"
+          target="_blank"
+        >
+          {" "}
+          resume
+        </a>
+      </div>
+      <h2>Front-end Proficiencies</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React.js</li>
+        <li>jQuery</li>
+        <li>Bootstrap</li>
+        <li>Responsive Design</li>
+      </ul>
+      <h2>Back-end Proficiencies</h2>
+      <ul>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>MySQL Sequelize.js</li>
+        <li>MongoDB Mongoose</li>
+        <li>RESTful APIs</li>
+        <li>GraghQL</li>
+        <li>MVC</li>
+      </ul>
     </div>
   );
 }

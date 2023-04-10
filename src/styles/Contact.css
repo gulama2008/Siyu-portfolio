@@ -13,3 +13,7 @@
     background-color: rgb(25, 77, 92)!important;
     border-color: rgb(25, 77, 92)!important;
 }
+
+.error-message{
+    color: red;
+}

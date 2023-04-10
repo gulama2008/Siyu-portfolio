@@ -1,29 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../../styles/Contact.css";
 
 export default function Contact() {
+  //set state isEmailValid to conditionally render the error message if the state is false
+  const [isEmailValid, setIsEmailValid] = useState(true);
+  const [isMessageValid, setIsMessageValid] = useState(true);
+
+  //handle email input validation and set the state isEmailValid to false if email format is not valid
+  const emailValidation = (event) => {
+    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if (!event.target.value.match(validRegex)) {
+      setIsEmailValid(false);
+    } else { 
+      setIsEmailValid(true);
+    }
+  }
+
+  const messageValidation = (e) => { 
+    if (!e.target.value) {
+      setIsMessageValid(false)
+    } else { 
+      setIsMessageValid(true)
+    }
+  }
+
+  const handleSubmit = (event) => { 
+    event.preventDefault();
+    
+  }
+
   return (
     <div className="contact-container">
       <h1 className="contact-title">Contact</h1>
       <form>
         <div className="form-group">
-          <label className="form-label" for="contact-name">
+          <label className="form-label" htmlFor="contact-name">
             Name:
           </label>
           <input type="text" id="contact-name" className="form-control"></input>
         </div>
         <div className="form-group">
-          <label className="form-label" for="contact-email">
+          <label className="form-label" htmlFor="contact-email">
             Email Address:
           </label>
           <input
             type="email"
             id="contact-email"
             className="form-control"
+            onBlur={emailValidation}
           ></input>
         </div>
         <div className="form-group">
-          <label className="form-label" for="contact-message">
+          <label className="form-label" htmlFor="contact-message">
             Message:
           </label>
           <textarea
@@ -31,9 +59,24 @@ export default function Contact() {
             id="contact-message"
             className="form-control"
             rows={5}
+            onBlur={messageValidation}
           ></textarea>
         </div>
-        <button type="button" className="btn btn-primary form-btn">
+        {isEmailValid ? (
+          <div></div>
+        ) : (
+          <div className="error-message">* Your email is invalid</div>
+        )}
+        {isMessageValid ? (
+          <div></div>
+        ) : (
+          <div className="error-message">* Message is required</div>
+        )}
+        <button
+          type="button"
+          className="btn btn-primary form-btn"
+          onClick={handleSubmit}
+        >
           Submit
         </button>
       </form>
