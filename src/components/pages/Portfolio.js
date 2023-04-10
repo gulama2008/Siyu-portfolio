@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import Project from './Project';
-import movie from '../../images/movie.jpg'
-import dog from "../../images/dog.png";
+import movie from '../../images/movie.jpeg'
+import pet from "../../images/pet.jpeg";
+import blog from "../../images/blog.jpeg";
+import weather from "../../images/weather.jpeg";
+import note from "../../images/note.webp";
 import "../../styles/Portfolio.css";
 
 
@@ -12,21 +15,35 @@ export default function Portfolio() {
       deployLink: "https://gulama2008.github.io/Movie-Search-Engine/",
       githubLink: "https://github.com/gulama2008/Movie-Search-Engine",
       desc: "JavaScript/HTML/CSS/API",
-      image: { movie },
+      image: movie,
     },
     {
       name: "Furry Foster Home",
       deployLink: "https://mighty-ridge-85314.herokuapp.com/",
       githubLink: "https://github.com/gulama2008/Furry-Foster-Home",
       desc: "Node/Express/MySQL/HTML/CSS/JS",
-      image: { dog },
+      image: pet,
     },
     {
       name: "Tech Blog",
       deployLink: "https://nameless-coast-74044.herokuapp.com/",
       githubLink: "https://github.com/gulama2008/cms-style-blog",
       desc: "Node/JavaScript/CSS/MySQL",
-      image: { movie },
+      image: blog,
+    },
+    {
+      name: "Weather Dashboard",
+      deployLink: "https://gulama2008.github.io/weather-dashboard/",
+      githubLink: "https://gulama2008.github.io/weather-dashboard/",
+      desc: "HTML/CSS/JS/Web APIs",
+      image: weather,
+    },
+    {
+      name: "Note Taker",
+      deployLink: "https://agile-temple-11022.herokuapp.com/",
+      githubLink: "https://github.com/gulama2008/note-taker",
+      desc: "Node/Express/HTML/CSS/JS",
+      image: note,
     },
   ]);
 

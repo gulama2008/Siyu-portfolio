@@ -1,7 +1,11 @@
 .portfolio-container{
     margin-top: 50px;
     margin-left: 50px;
-    width: 70%;
+    /* width: 80%; */
+}
+
+.portfolio-title{
+    color: rgb(25, 77, 92);;
 }
 
 .portfolio-projects{

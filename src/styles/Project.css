@@ -1,22 +1,40 @@
 .project-container{
+    position: relative;
     height: 300px;
     width: 500px;
     overflow: hidden;
     margin-top: 50px;
+    margin-left: 50px;
    
 }
 
+.project-img{
+    /* height: 100%; */
+    width: 100%;
+}
+
 .project-links{
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    /* background-color:rgb(123, 209, 217); */
+    /* padding: 10px; */
     display: flex;
     align-items: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 .project-name{
     font-size: 30px;
+    font-weight: bold;
+    color: black;
     /* display: inline-block; */
     margin-top: 20px;
     margin-left: 40px;
+}
+
+.project-anchor:hover{
+    text-decoration: none;
 }
 
 .github-img{
@@ -26,6 +44,9 @@
 }
 
 .project-desc{
-    margin-left: 40px;
-    font-size: 20px;
+    position: absolute;
+    left: 60px;
+    top: 120px;
+    font-size: 18px;
 }
+
