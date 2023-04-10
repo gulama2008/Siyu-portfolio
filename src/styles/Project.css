@@ -1,0 +1,31 @@
+.project-container{
+    height: 300px;
+    width: 500px;
+    overflow: hidden;
+    margin-top: 50px;
+   
+}
+
+.project-links{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.project-name{
+    font-size: 30px;
+    /* display: inline-block; */
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.github-img{
+    height: 40px;
+    margin-left: 10px;
+
+}
+
+.project-desc{
+    margin-left: 40px;
+    font-size: 20px;
+}

@@ -1,71 +1,21 @@
 import React from "react";
-import movie from '../../images/movie.jpg'
-import dog from "../../images/dog.png";
+import github from "../../images/github.png"
 import "../../styles/Project.css";
 
-export default function Project() {
+export default function Project(props) {
+  const { name, deployLink, githubLink,desc, image } = props.projectAttributes;
   return (
-    <div>
-      <div className="project-item">
-        <a
-          href="https://gulama2008.github.io/Movie-Search-Engine/"
-          target="_blank"
-        >
-          <img src={movie} alt="Movie Search Engine"></img>
-          <div>
-            <h3>Movie Search Engine</h3>
-            <p>JavaScript/HTML/CSS/Web API</p>
-          </div>
+    <div
+      className="project-container" style={{ backgroundImage: `url(${image})` }}>
+      <div className="project-links">
+        <a href={deployLink} target="_blank">
+          <p className="project-name">{name}</p>
+        </a>
+        <a href={githubLink} target="_blank">
+          <img src={github} className="github-img"></img>
         </a>
       </div>
-      <div>
-        <a href="https://mighty-ridge-85314.herokuapp.com/" target="_blank">
-          <img src={dog} alt="Furry Foster Home"></img>
-          <div>
-            <h3>Furry Foster Home</h3>
-            <p>JavaScript/HTML/CSS/Web API</p>
-          </div>
-        </a>
-      </div>
-      <div>
-        <a href="https://nameless-coast-74044.herokuapp.com/" target="_blank">
-          <img src={dog} alt="Tech Blog"></img>
-          <div>
-            <h3>Tech Blog</h3>
-            <p>JavaScript/HTML/CSS/Web API</p>
-          </div>
-        </a>
-      </div>
-      <a
-        href="https://gulama2008.github.io/Movie-Search-Engine/"
-        target="_blank"
-      >
-        <img src={movie} alt="Movie Search Engine"></img>
-        <div>
-          <h3>Movie Search Engine</h3>
-          <p>JavaScript/HTML/CSS/Web API</p>
-        </div>
-      </a>
-      <a
-        href="https://gulama2008.github.io/Movie-Search-Engine/"
-        target="_blank"
-      >
-        <img src={movie} alt="Movie Search Engine"></img>
-        <div>
-          <h3>Movie Search Engine</h3>
-          <p>JavaScript/HTML/CSS/Web API</p>
-        </div>
-      </a>
-      <a
-        href="https://gulama2008.github.io/Movie-Search-Engine/"
-        target="_blank"
-      >
-        <img src={movie} alt="Movie Search Engine"></img>
-        <div>
-          <h3>Movie Search Engine</h3>
-          <p>JavaScript/HTML/CSS/Web API</p>
-        </div>
-      </a>
+      <p className="project-desc">{desc}</p>
     </div>
   );
 }
