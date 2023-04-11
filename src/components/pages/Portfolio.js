@@ -6,6 +6,9 @@ import blog from "../../images/blog.jpeg";
 import weather from "../../images/weather.jpeg";
 import note from "../../images/note.webp";
 import "../../styles/Portfolio.css";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 
 export default function Portfolio() {
@@ -50,13 +53,21 @@ export default function Portfolio() {
   return (
     <div className="portfolio-container">
       <h1 className="portfolio-title">Portfolio</h1>
-      <div className="portfolio-projects">
-        {projects.map((project) => {
-          return (
-            <Project projectAttributes={project} className="portfolio-item" />
-          );
-        })}
-      </div>
+
+      <Container className="portfolio-projects">
+        <Row>
+          {projects.map((project) => {
+            return (
+              <Col xs={12} md={6}>
+                <Project
+                  projectAttributes={project}
+                  className="portfolio-item"
+                />
+              </Col>
+            );
+          })}
+        </Row>
+      </Container>
     </div>
   );
 }
