@@ -5,7 +5,7 @@ import profileImage from "../../images/profile-image.jpg"
 export default function AboutMe() {
   return (
     <div className="aboutme-container">
-      <h1>About Me</h1>
+      <h1 className='aboutme-title'>About Me</h1>
       <figure className='profile-image-container'>
         <img
           className="profile-image"
@@ -13,7 +13,7 @@ export default function AboutMe() {
           alt="Siyu Liu Profile image"
         ></img>
       </figure>
-      <p>
+      <p className='aboutme-content'>
         My name is Siyu, I live in Sydney and working as an accountant for
         couple of years. I have great passion in programming that's why I'm
         currently seeking for a career change to IT industry in my life. I enjoy

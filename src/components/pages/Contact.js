@@ -34,6 +34,7 @@ export default function Contact() {
 
   const handleSubmit = (event) => { 
     event.preventDefault();
+    window.alert("Thank you for submitting the message!")
     
   }
 

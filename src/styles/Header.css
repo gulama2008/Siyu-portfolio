@@ -14,7 +14,8 @@
     padding-right: 10px;
     /* margin: 50px; */
     text-align: right;
-    font-weight: bold;
+    font-size: 50px;
+    font-weight: bolder !important;
     color: black;
     /* text-shadow: black 0.1em 0.1em 0.2em     */
 }
