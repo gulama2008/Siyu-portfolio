@@ -5,6 +5,7 @@ import pet from "../../images/pet.jpeg";
 import blog from "../../images/blog.jpeg";
 import weather from "../../images/weather.jpeg";
 import note from "../../images/note.webp";
+import shopping from "../../images/shopping.jpeg"
 import "../../styles/Portfolio.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -13,6 +14,13 @@ import Col from "react-bootstrap/Col";
 
 export default function Portfolio() {
   const [projects, setProjects] = useState([
+    {
+      name: "Shopper-Helper",
+      deployLink: "https://shopper-helper.herokuapp.com/",
+      githubLink: "https://github.com/gulama2008/Shopper-Helper",
+      desc: "MERN/GraphQL/JavaScript",
+      image: shopping,
+    },
     {
       name: "Movie Search Engine",
       deployLink: "https://gulama2008.github.io/Movie-Search-Engine/",
